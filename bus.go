@@ -254,8 +254,8 @@ func (b *Bus) HandlerTopicSubscriptions(handlerKey string) []string {
 
 // RegisterHandler re/register the handler to the registry
 func (b *Bus) RegisterHandler(key string, h Handler) {
-	b.mutex.Lock()
-	defer b.mutex.Unlock()
+	//b.mutex.Lock()
+	//defer b.mutex.Unlock()
 
 	h.key = key
 	b.registerHandler(h)
